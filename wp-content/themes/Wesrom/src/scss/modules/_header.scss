@@ -1,0 +1,19 @@
+.navbar {
+  box-shadow: inset 0px -1px 0px #e5e5e5;
+
+  .custom-logo-link{
+    padding-right: 200px;
+  }
+
+  .menu-item {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    color: #949494;
+    padding-left: 32px;
+  }
+}

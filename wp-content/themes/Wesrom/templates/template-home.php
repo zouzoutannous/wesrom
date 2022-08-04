@@ -9,14 +9,4 @@ Template Post Type: Page
 
 
 
-
-
-
-
-
-
-
-
-
-
 <?php get_footer(); ?>
