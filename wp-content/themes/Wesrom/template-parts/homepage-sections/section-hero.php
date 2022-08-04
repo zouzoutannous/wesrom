@@ -14,20 +14,20 @@
             </div>
         </div>
         <div class="partners">
-        <div class="row">
-            <?php if (have_rows('partners')) : ?>
-                    <?php while (have_rows('partners')): the_row(); ?>
+            <div class="row">
+                <?php if (have_rows('partners')) : ?>
+                    <?php while (have_rows('partners')) : the_row(); ?>
                         <div class="col-lg-6">
-                                <?php if (get_sub_field('partner_image')) : ?>
-                                    <img src="<?php the_sub_field('partner_image'); ?>" alt="" class="image mx-auto d-block">
-                                <?php endif; ?>
-                                <?php if (get_sub_field('partner_info')) : ?>
-                                    <h4 class="information"><?php the_sub_field('partner_info'); ?></h4>
-                                <?php endif; ?>
-                                <?php if (get_sub_field('partner_cta')) : ?>
-                                    <button class="cta mx-auto d-block"><a class="link"><?php the_sub_field('partner_cta') ?></a></button>
-                                <?php endif; ?>
-                            </div>
+                            <?php if (get_sub_field('partner_image')) : ?>
+                                <img src="<?php the_sub_field('partner_image'); ?>" alt="" class="image mx-auto d-block">
+                            <?php endif; ?>
+                            <?php if (get_sub_field('partner_info')) : ?>
+                                <h4 class="information"><?php the_sub_field('partner_info'); ?></h4>
+                            <?php endif; ?>
+                            <?php if (get_sub_field('partner_cta')) : ?>
+                                <button class="cta mx-auto d-block"><a class="link"><?php the_sub_field('partner_cta') ?></a></button>
+                            <?php endif; ?>
+                        </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
             </div>
