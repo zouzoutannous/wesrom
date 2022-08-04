@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
     <title><?php echo bloginfo('title'); ?></title>
     <?php wp_head(); ?>
 </head>
@@ -17,7 +19,7 @@
     </header>
 
     <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
-        
+
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <a class="navbar-brand" href="#"><?php the_custom_logo(); ?></a>
