@@ -21,7 +21,7 @@
                             <p class="information"><?php the_sub_field('service_information'); ?></p>
                         <?php endif; ?>
                         <?php if (get_sub_field('service_cta')) : ?>
-                            <a href="#" class="link"><?php the_sub_field('service_cta') ?></a>
+                            <a href="#" class="link"><?php the_sub_field('service_cta') ?></a><span><i class="fal fa-arrow-right"></i></span>
                         <?php endif; ?>
                     </div>
                 <?php endwhile; ?>

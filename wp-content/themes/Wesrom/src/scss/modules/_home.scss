@@ -88,12 +88,12 @@
         padding-bottom: 40px;
       }
     }
-    .service{
+    .service {
       padding-bottom: 7%;
     }
-    .service::after{
+    .service::after {
       content: " ";
-      background-color: #02B5EE;
+      background-color: #02b5ee;
       content: " ";
       height: 8px;
       position: absolute;
@@ -142,6 +142,121 @@
         font-size: 20px;
         line-height: 24px;
         color: white;
+      }
+    }
+  }
+  .values {
+    margin-top: 120px;
+    .content {
+      margin-bottom: 40px;
+      .heading {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+      }
+    }
+    .value {
+      .title {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+      }
+      .info p {
+        padding-top: 44px;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+      }
+      .info::after {
+        background-color: #d2d2d2;
+        content: " ";
+        height: 1px;
+        left: 0;
+        position: absolute;
+        top: -10px;
+        width: 95%;
+        z-index: 10;
+      }
+    }
+  }
+  .contact {
+    .heading {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 56px;
+    }
+    .info {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+    }
+    form {
+      label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        pointer-events: none;
+        transition: 0.5s;
+      }
+      .form-control {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+      }
+      .form-control::placeholder {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+      }
+      .form-control input:focus ~ label,
+      .form-control input:valid ~ label {
+        top: -20px;
+        left: 0;
+        color: #03e9f4;
+        font-size: 12px;
+      }
+      .submit-btn {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        background: #02b5ee;
+        color: white;
+        padding: 16px 40px;
+        border: none;
+      }
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+
+        span{
+          text-decoration: underline;
+        }
       }
     }
   }
