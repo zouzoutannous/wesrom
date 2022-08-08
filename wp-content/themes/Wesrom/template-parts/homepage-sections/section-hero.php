@@ -17,7 +17,7 @@
             <div class="row">
                 <?php if (have_rows('partners')) : ?>
                     <?php while (have_rows('partners')) : the_row(); ?>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 partner">
                             <?php if (get_sub_field('partner_image')) : ?>
                                 <img src="<?php the_sub_field('partner_image'); ?>" alt="" class="image mx-auto d-block">
                             <?php endif; ?>

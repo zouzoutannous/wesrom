@@ -13,7 +13,7 @@
                     <?php while (have_rows('value')) : the_row(); ?>
                         <div class="col-lg-6">
                             <?php if (get_sub_field('value_title')) : ?>
-                                <i class="fal fa-check-circle"></i><h3 class="title"><?php the_sub_field('value_title'); ?></h3>
+                                <span><i class="fa fa-check-circle"></i></span><h3 class="title"><?php the_sub_field('value_title'); ?></h3>
                             <?php endif; ?>
                             <?php if (get_sub_field('value_information')) : ?>
                                 <p class="info"><?php the_sub_field('value_information'); ?></p>

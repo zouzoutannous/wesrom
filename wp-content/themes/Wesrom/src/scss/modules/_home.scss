@@ -1,4 +1,7 @@
 .home {
+  a:hover{
+    text-decoration: none;
+  }
   .hero {
     .content {
       padding-top: 113px;
@@ -28,6 +31,10 @@
         background: #02b5ee;
         border: none;
       }
+      .cta:hover{
+        background-color: #03c7ff;
+        color: #fff;
+      }
       .link {
         font-family: "Montserrat", sans-serif;
         font-style: normal;
@@ -36,9 +43,15 @@
         line-height: 24px;
         color: white;
       }
+      .link:hover{
+       text-decoration: none;
+      }
     }
     .partners {
       padding-top: 130px;
+      .partner:first-of-type{
+        margin-top: 20px;
+      }
       .information {
         text-align: center;
         font-family: "Montserrat", sans-serif;
@@ -66,7 +79,26 @@
           color: white;
         }
       }
+      .cta:hover{
+        background-color: #03c7ff;
+        color: #fff;
+      }
+      .link:hover{
+        text-decoration: none;
+      }
     }
+  }
+  @media screen and (max-width: 767px) {
+      .content{
+        text-align: center;
+      }
+      .info{
+        text-align: center;
+        padding: 20px;
+      }
+      .partner{
+        padding: 5%;
+      }
   }
   .services {
     .content {
@@ -90,6 +122,10 @@
     }
     .service {
       padding-bottom: 7%;
+
+      i:hover{
+       transform: scale(1.5);
+      }
     }
     .service::after {
       content: " ";
@@ -144,6 +180,10 @@
         color: white;
       }
     }
+    .cta:hover{
+      background-color: #03c7ff;
+      color: #fff;
+    }
   }
   .values {
     margin-top: 120px;
@@ -158,12 +198,19 @@
       }
     }
     .value {
+      i{
+       color: #02B5EE;
+       width: 33px;
+       height: 33px;
+       display: inline-block;
+      }
       .title {
         font-family: "Montserrat", sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
         line-height: 32px;
+        display: inline-block;
       }
       .info p {
         padding-top: 44px;
@@ -185,8 +232,55 @@
       }
     }
   }
-  .contact {
+  .testimonials {
+    margin-top: 120px;
     .heading {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 48px;
+    }
+    .person {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+    }
+    .position {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: capitalize;
+    }
+    .testimonial-content {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+    }
+    .carousel-item .active{
+      background-color: #02b5ee;
+    }
+    .carousel-control-prev{
+      position: absolute;
+      right: 30px;
+      left: 80%;
+    }
+    .carousel-control-next{
+      position: absolute;
+    }
+  }
+  .contact {
+    margin-top: 120px;
+    
+    .heading {
+      border-top: 8px solid #02B5EE;
       font-family: "Montserrat", sans-serif;
       font-style: normal;
       font-weight: 300;
@@ -202,12 +296,17 @@
     }
     form {
       label {
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
         position: absolute;
         top: 0;
         left: 0;
         padding: 10px 0;
         font-size: 16px;
-        color: #fff;
+        color: black;
         pointer-events: none;
         transition: 0.5s;
       }
@@ -218,7 +317,7 @@
         color: #fff;
         margin-bottom: 30px;
         border: none;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid black;
         outline: none;
         background: transparent;
       }
@@ -229,12 +328,13 @@
         font-size: 20px;
         line-height: 28px;
       }
-      .form-control input:focus ~ label,
-      .form-control input:valid ~ label {
+      input:focus ~ label,
+      input:valid ~ label {
         top: -20px;
         left: 0;
         color: #03e9f4;
         font-size: 12px;
+        border:none;
       }
       .submit-btn {
         font-family: "Montserrat", sans-serif;
@@ -247,6 +347,10 @@
         padding: 16px 40px;
         border: none;
       }
+      .submit-btn:hover{
+        background-color: #03c7ff;
+        color: #fff;
+      }
       p {
         font-family: "Montserrat", sans-serif;
         font-style: normal;
@@ -254,7 +358,7 @@
         font-size: 12px;
         line-height: 20px;
 
-        span{
+        span {
           text-decoration: underline;
         }
       }

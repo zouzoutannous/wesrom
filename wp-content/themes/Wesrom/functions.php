@@ -3,7 +3,7 @@
 //CSS & JS Scripts
 function resources(){
         wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');
-        wp_enqueue_style('style', get_template_directory_uri() . '/src/css/main.css', array(), false, 'all');
+        wp_enqueue_style('style', get_template_directory_uri() . '/src/css/main.css', array(), true, 'all');
         wp_enqueue_script('jquery','https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', 'all', 'all', true);
         wp_enqueue_script('bootstrapjs', get_template_directory_uri(). '/js/bootstrap.min.js', 'jquery', false, true);
         wp_enqueue_script('custom-js', get_template_directory_uri(). '/src/js/validateForm.js', 'jquery', false, true);
